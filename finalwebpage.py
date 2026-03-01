@@ -4,7 +4,7 @@ from sklearn.linear_model import LinearRegression
 
 import pandas as pd
 
-data = pd.read_excel(r"C:\Users\neeli\OneDrive\Desktop\excel\alldatacombined.xlsx", engine='openpyxl')
+data = pd.read_excel(r"alldatacombined.xlsx", engine='openpyxl')
 
 
 
@@ -38,3 +38,4 @@ if st.button("Predict Close Price"):
         f"<p style='color:blue; font-size:20px;'>Predicted Close Price for {company}: {predicted_close:.2f}</p>",
         unsafe_allow_html=True
     )
+
